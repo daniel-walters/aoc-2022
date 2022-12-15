@@ -40,13 +40,13 @@ mod tests {
     use crate::utils::get_test_input;
 
     #[test]
-    fn returns_highest_number() {
+    fn test_a() {
         let input = get_test_input(1);
         assert_eq!(solution_a(&input), 24000);
     }
 
     #[test]
-    fn returns_highest_three_numbers_summed() {
+    fn test_b() {
         let input = get_test_input(1);
         assert_eq!(solution_b(&input), 45000);
     }

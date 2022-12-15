@@ -24,6 +24,5 @@ pub fn get_test_input(day: u8) -> String {
 }
 
 fn read_input(filename: &str) -> String {
-    println!("{}", filename);
     read_to_string(filename).expect("To read file")
 }

@@ -24,10 +24,10 @@ fn main() {
 }
 
 // TODO: can this be automated?
-// TODO: theres a better way to do this to be able to test part a/b individually
 fn get_solution_fn(day: u8) -> (fn(&String) -> usize, fn(&String) -> usize) {
     return match day {
         1 => (day01::solution_a, day01::solution_b),
+        2 => (day02::solution_a, day02::solution_b),
         _ => panic!("Invalid day"),
     };
 }
