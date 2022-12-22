@@ -28,6 +28,7 @@ fn get_solution_fn(day: u8) -> (fn(&String) -> usize, fn(&String) -> usize) {
     return match day {
         1 => (day01::solution_a, day01::solution_b),
         2 => (day02::solution_a, day02::solution_b),
+        3 => (day03::solution_a, day03::solution_b),
         _ => panic!("Invalid day"),
     };
 }
