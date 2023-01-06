@@ -64,6 +64,10 @@ fn get_solution_fn(day: u8) -> (SolutionFunction, SolutionFunction) {
             SolutionFunction::ReturnsString(day05::solution_a),
             SolutionFunction::ReturnsString(day05::solution_b),
         ),
+        6 => (
+            SolutionFunction::ReturnsNumber(day06::solution_a),
+            SolutionFunction::ReturnsNumber(day06::solution_b),
+        ),
         _ => panic!("Invalid day"),
     };
 }
